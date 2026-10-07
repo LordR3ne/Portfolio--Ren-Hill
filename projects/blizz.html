@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blizz — Case Study — René Hill</title>
+  <meta name="description" content="Blizz — a solo-built cat-and-mouse game set in complete whiteout, navigated entirely by sound. Godot, built in one week." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/case-study.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">René Hill<span class="accent">.</span></a>
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../skills.html" class="nav-link">Skills</a>
+        <a href="../cv.html" class="nav-link">CV</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">← All Projects</a>
+        <p class="section-tag">// 03 · Case Study</p>
+        <h1>Blizz</h1>
+        <p class="case-subtitle">
+          A game of cat and mouse set in complete whiteout — the player navigates purely by sound.
+          Solo-designed, sound-designed, and built in one week.
+        </p>
+
+        <p>
+          <a href="https://lordr3ne.itch.io/blizz" class="btn btn-primary" target="_blank" rel="noopener">Play on itch.io ↗</a>
+        </p>
+
+        <dl class="quick-facts">
+          <div class="quick-fact">
+            <dt>Team</dt>
+            <dd>Solo</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Role</dt>
+            <dd>Game Design, Sound Design (95% self-produced/recorded), Implementation</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Timeframe</dt>
+            <dd>1 week</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Tools</dt>
+            <dd>Godot</dd>
+          </div>
+        </dl>
+
+        <div class="case-cover">
+          <img src="../assets/img/projects/blizz/blizz-cover.jpg" alt="Blizz — foggy first-person in-game screenshot" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="container">
+        <div class="case-section">
+          <h2>Overview</h2>
+          <p>
+            Blizz is a game of cat and mouse set in complete whiteout. The player navigates purely by
+            sound: an unpleasant, dissonant sound marks the enemy to avoid, a harmonic sound marks the
+            goal. Visibility is deliberately removed so that hearing becomes the only reliable sense.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h2>Design Challenge</h2>
+          <p>
+            Sound isn't atmosphere layered on top here — it's the entire information channel the player
+            navigates by. The design question throughout stayed simple: what does threat sound like,
+            what does safety sound like, and how clearly can the two be told apart without an image to
+            help?
+          </p>
+          <ul>
+            <li>Design a mechanic that lives entirely within a single sensory channel — hearing</li>
+            <li>Go from idea to a complete, playable loop solo within one week, with no scope creep and no incomplete systems</li>
+            <li>Make threat and safety instantly distinguishable by sound alone, with no visual reference to fall back on</li>
+          </ul>
+        </div>
+
+        <div class="case-section">
+          <h2>My Contribution</h2>
+          <p>
+            Nearly all of the sound was self-recorded or self-produced. On one side sits the enemy
+            sound, deliberately unnatural in tone. On the other sits a rain drum, producing a
+            far-reaching, warm and harmonic sound that the player moves toward. Once the player finds
+            its source and enters the igloo, the sound is dampened and the player is sheltered from the
+            loud storm outside. If the enemy finds the player and gets closer, a dissonance filter
+            activates and grows stronger the nearer it gets.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h2>Outcome &amp; Learnings</h2>
+          <p>
+            The atmosphere carries the entire feel of the game. Blizz proves two things at once: that a
+            mechanic can live entirely within a single sensory channel, and that a complete, playable
+            loop can go from idea to finished solo within one week — no scope creep, no incomplete
+            systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="case-pager container" aria-label="Other projects">
+      <a href="seateam.html" class="pager-link pager-prev">
+        <span class="pager-label">← Previous</span>
+        <span class="pager-title">SeaTeam</span>
+      </a>
+      <a href="moshpit.html" class="pager-link pager-next">
+        <span class="pager-label">Next →</span>
+        <span class="pager-title">Moshpit</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 René Hill — Game Designer</p>
+      <div class="footer-links">
+        <a href="mailto:renehill170@gmail.com">Email</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

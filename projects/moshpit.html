@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moshpit — Case Study — René Hill</title>
+  <meta name="description" content="Moshpit — a solo-developed physics-based mosh pit crowd simulation, built in Godot 4 (C#)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/case-study.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">René Hill<span class="accent">.</span></a>
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../skills.html" class="nav-link">Skills</a>
+        <a href="../cv.html" class="nav-link">CV</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">← All Projects</a>
+        <p class="section-tag">// 04 · Case Study</p>
+        <h1>Moshpit</h1>
+        <p class="case-subtitle">
+          A 2D top-down arcade highscore game that turns the chaos of a festival mosh pit into
+          physics-based, rhythm-driven gameplay — solo-designed and programmed in Godot 4.
+        </p>
+
+        <dl class="quick-facts">
+          <div class="quick-fact">
+            <dt>Team</dt>
+            <dd>Solo</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Role</dt>
+            <dd>Game Design &amp; Programming</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Status</dt>
+            <dd>In active development</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Tools</dt>
+            <dd>Godot 4 (C#)</dd>
+          </div>
+        </dl>
+
+        <div class="case-cover">
+          <video poster="../assets/img/projects/moshpit/moshpit-poster.jpg" autoplay muted loop playsinline>
+            <source src="../assets/video/moshpit/moshpit-crowd-sim.webm" type="video/webm" />
+            <source src="../assets/video/moshpit/moshpit-crowd-sim.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="container">
+        <div class="case-section">
+          <h2>Overview</h2>
+          <p>
+            Moshpit is a 2D top-down arcade highscore game that turns the chaos of a festival mosh pit
+            into physics-based gameplay, blending the kinetic, rhythm-driven feedback of <em>Ape Out</em>
+            with the precision timing of <em>Sekiro</em>'s parry system. Beneath the raw physicality, the
+            design core is about collective energy and camaraderie rather than violence — sweat and
+            momentum, not blood.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h2>Design Challenge</h2>
+          <p>
+            Before any player interaction could work, the crowd itself had to feel alive. The current
+            milestone is proving that hundreds of independent agents can move, push, and breathe like a
+            real mosh pit — using a custom 2D social force simulation — before a single player mechanic
+            is layered on top.
+          </p>
+          <ul>
+            <li>Simulate hundreds of agents with believable, density-driven crowd behavior in real time</li>
+            <li>Render the whole crowd in a single draw call via MultiMesh instancing, leaving performance headroom for gameplay systems later</li>
+            <li>Sync a rhythm-driven wave mechanic to the music so the crowd's motion reads as musical, not random</li>
+          </ul>
+        </div>
+
+        <div class="media-slot">
+          <img src="../assets/img/projects/moshpit/moshpit-poster.jpg" alt="Moshpit — crowd simulation prototype, agents rendered via MultiMesh instancing" loading="lazy" />
+        </div>
+
+        <div class="case-section">
+          <h2>My Contribution</h2>
+          <p>
+            As solo designer and programmer, I built the custom 2D social force crowd simulation in
+            Godot 4 (C#) from scratch — agents that push, flow, and "breathe" through density-driven
+            forces — and implemented the MultiMesh instancing pipeline that renders hundreds of agents
+            in a single draw call. I also built the rhythm-synced wave mechanic that radiates through
+            the crowd in time with the music.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h2>Outcome &amp; Learnings</h2>
+          <p>
+            The project is currently in an active physics-prototyping phase: the simulation above runs
+            crowd-only, without a player in it yet. Getting hundreds of agents to move and react like a
+            real, living mosh pit is the milestone that has to hold up before any player interaction is
+            layered on top — introducing the player into the simulation is the next step.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="case-pager container" aria-label="Other projects">
+      <a href="blizz.html" class="pager-link pager-prev">
+        <span class="pager-label">← Previous</span>
+        <span class="pager-title">Blizz</span>
+      </a>
+      <a href="home-sweet-home.html" class="pager-link pager-next">
+        <span class="pager-label">Next →</span>
+        <span class="pager-title">Home ?weet Home</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 René Hill — Game Designer</p>
+      <div class="footer-links">
+        <a href="mailto:renehill170@gmail.com">Email</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

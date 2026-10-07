@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home ?weet Home — Case Study — René Hill</title>
+  <meta name="description" content="Home ?weet Home — a cozy life sim that flips into physics-based action, a case study in comfort as a control system." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/case-study.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">René Hill<span class="accent">.</span></a>
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../skills.html" class="nav-link">Skills</a>
+        <a href="../cv.html" class="nav-link">CV</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="container">
+        <a href="../index.html#work" class="back-link">← All Projects</a>
+        <p class="section-tag">// 01 · Case Study</p>
+        <h1>Home ?weet Home</h1>
+        <p class="case-subtitle">
+          A case study in comfort as a control system — a cozy life sim that flips into
+          physics-based action the moment the player stops complying.
+        </p>
+
+        <dl class="quick-facts">
+          <div class="quick-fact">
+            <dt>Team</dt>
+            <dd>4 people (student project)</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Role</dt>
+            <dd>Game Design (Lead), Sound Design, supporting Implementation</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Timeframe</dt>
+            <dd>6 weeks</dd>
+          </div>
+          <div class="quick-fact">
+            <dt>Tools</dt>
+            <dd>Godot</dd>
+          </div>
+        </dl>
+
+        <div class="case-cover">
+          <img src="../assets/img/projects/home-sweet-home/hsh-cover.jpg" alt="Home Sweet Home — cozy first-person house interior" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="container">
+        <div class="case-section">
+          <h2>Overview</h2>
+          <p>
+            A player settles into a warm, cozy apartment — as long as she follows the instructions of a
+            caring narrator, symbolized by drinking water regularly. If she refuses, that same apartment
+            turns into a physics-driven fight for survival: furniture becomes weapons, the house visibly
+            decays, and enemies swarm up from the basement. Both states share one economy, so the player
+            can retreat back into comfort at any time. Only gradually does it become clear that the
+            apartment isn't really an apartment at all, but a coma-induced sanctuary built by the
+            protagonist's own psyche — and the narrator isn't external, he's her own subconscious.
+          </p>
+          <p>
+            <a href="../assets/docs/home-sweet-home/home-sweet-home-gdd.pdf" class="btn" download>Download full GDD (PDF) ↓</a>
+          </p>
+        </div>
+
+        <div class="media-slot">
+          <img src="../assets/img/projects/home-sweet-home/hsh-paper-prototype.jpg" alt="Home Sweet Home — early paper prototype" loading="lazy" />
+        </div>
+
+        <div class="case-section">
+          <h2>Design Challenge</h2>
+          <p>
+            My core responsibility on this project wasn't any single mechanic, but the question: what
+            should feel like safety to the player, and how does that exact feeling tip into control and
+            threat? That question had to be answered consistently across every layer of design — the
+            economy, the physics handling, the visual decay stages, and the sound design.
+          </p>
+          <ul>
+            <li>Money is earned effortlessly in the Cozy Loop through mundane tasks like throwing out trash or vacuuming — a deliberate inversion of the protagonist's real financial insecurity, so spending becomes self-soothing, not progression</li>
+            <li>Four stages of environmental decay — from warm, low-poly domestic comfort to a bio-mechanical fusion in the depths — track the protagonist's psychological facade at the same pace</li>
+            <li>Weight classes translate control versus being slowed down directly into physics parameters (mass, damping, knockback curve): light objects throw fast and risky, heavy ones slow the player but hit as area weapons</li>
+          </ul>
+        </div>
+
+        <div class="media-slot media-slot--wide">
+          <img src="../assets/img/projects/home-sweet-home/hsh-activity-diagram.png" alt="Home Sweet Home — main activity diagram" loading="lazy" style="object-fit: contain; background: #fff;" />
+        </div>
+
+        <div class="two-col media-two-col">
+          <img src="../assets/img/projects/home-sweet-home/hsh-decay-stage-1.jpg" alt="Home Sweet Home — house decay stage 1" loading="lazy" />
+          <img src="../assets/img/projects/home-sweet-home/hsh-decay-stage-2.jpg" alt="Home Sweet Home — house decay stage 2" loading="lazy" />
+        </div>
+
+        <div class="case-section">
+          <h2>My Contribution</h2>
+          <p>
+            As lead designer, I orchestrated the economy, physics, visual decay, and sound layers so
+            they reinforce each other instead of existing side by side. Before any digital
+            implementation, I ran six analog paper-prototype tests to check whether the narrator
+            actually provokes rebellion. Three findings changed the design directly: most test subjects
+            complied with the narrator almost unconditionally, so rebellion had to be designed as a
+            conscious, active choice rather than a natural reflex; even a slight shift in the narrator's
+            tone from friendly to ironic flipped players' trust, so the narrator now starts out fully
+            sympathetic before cracks slowly creep in; and absurd details — a bed in the bathroom, an
+            irrationally expensive shop item — created unease without any dialogue, confirming the
+            illusion could break through spatial and economic means alone. I added the sound layer late,
+            once the systems were stable enough to make hits and currency pickups feel tangible.
+          </p>
+        </div>
+
+        <div class="media-grid-4">
+          <img src="../assets/img/projects/home-sweet-home/hsh-cozy-points-1.jpg" alt="Home Sweet Home — cozy points UI, view 1" loading="lazy" />
+          <img src="../assets/img/projects/home-sweet-home/hsh-cozy-points-2.jpg" alt="Home Sweet Home — cozy points UI, view 2" loading="lazy" />
+          <img src="../assets/img/projects/home-sweet-home/hsh-cozy-points-3.jpg" alt="Home Sweet Home — cozy points UI, view 3" loading="lazy" />
+          <img src="../assets/img/projects/home-sweet-home/hsh-cozy-points-4.jpg" alt="Home Sweet Home — cozy points UI, view 4" loading="lazy" />
+        </div>
+
+        <div class="case-section">
+          <h2>Outcome &amp; Learnings</h2>
+          <p>
+            The Dual Core Loop, the weight-class furniture system, and the shared economy are fully
+            designed and mostly implemented. The dynamic tonality and rebellion system was validated by
+            playtests but wasn't implemented due to time constraints, and two of three planned minigames
+            are playable — these gaps are documented openly in the design document, not hidden. Taken as
+            a whole, the prototype isn't a good experience yet: it confuses players more than it's fun,
+            though testers could see the intended vision.
+          </p>
+          <p>
+            The biggest lesson wasn't systemic. A teammate and I disagreed from the start on ludology
+            versus narratology — she wanted story to lead, I wanted game feel and systemic depth first —
+            and in week 4 I got stuck defending my own proposal for the Cozy/Hardcore transition instead
+            of addressing the bigger question of why the player acts at all, costing the team time. I
+            apologized and deliberately changed my role afterward: argue less for individual decisions,
+            and moderate the shared direction instead. A design document only serves its purpose if the
+            team actually uses it — a beautifully made diagram nobody reads is worthless.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="case-pager container" aria-label="Other projects">
+      <a href="moshpit.html" class="pager-link pager-prev">
+        <span class="pager-label">← Previous</span>
+        <span class="pager-title">Moshpit</span>
+      </a>
+      <a href="seateam.html" class="pager-link pager-next">
+        <span class="pager-label">Next →</span>
+        <span class="pager-title">SeaTeam</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 René Hill — Game Designer</p>
+      <div class="footer-links">
+        <a href="mailto:renehill170@gmail.com">Email</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
